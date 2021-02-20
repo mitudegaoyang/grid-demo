@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+}
+
+.container1 {
+    grid-template-areas: "a b c" "d e f" "c d e"
+}
+
+.container2 {
+    grid-template-areas: 'a a a'
+                         'b b b'
+                         'c c c';
+}
+
+.container2 .item1{
+    grid-area: a;
+}
+.container2 .item2{
+    grid-area: b;
+}
+.container2 .item3{
+    grid-area: c;
+}
+
+.container3 {
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 100px minmax(100px, auto) 100px;
+    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+}
+
+.container3 .item1{
+    grid-area: header;
+}
+.container3 .item2{
+    grid-area: main;
+    height: 500px;
+    line-height: 500px;
+}
+.container3 .item3{
+    grid-area: sidebar;
+}
+.container3 .item4{
+    grid-area: footer;
+}
+
+.container4 {
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas: ".  g  g  g  . " "o_ .  .  .  . " "o  .  e  e  . " "o  .  .  .  l " ".  g_ g_ g_ . "
+}
+
+.container4 .item1{
+    grid-area: g;
+}
+.container4 .item2{
+    grid-area: o_;
+}
+.container4 .item3{
+    grid-area: o;
+}
+.container4 .item4{
+    grid-area: g_;
+}
+.container4 .item5{
+    grid-area: l;
+}
+.container4 .item6{
+    grid-area: e;
+}
+
+.container .item {
+    font-size: 3em;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .item1 {
+    background-image: linear-gradient(to bottom right, #FC97AF, #FC587F);
+}
+
+.container .item2 {
+    background-image: linear-gradient(to bottom right, #97CAFC, #58AAFC);
+}
+
+.container .item3 {
+    background-image: linear-gradient(to bottom right, #FCCA97, #FCA958);
+}
+
+.container .item4 {
+    background-image: linear-gradient(to bottom right, #B197FC, #8158FC);
+}
+
+.container .item5 {
+    background-image: linear-gradient(to bottom right, #FC97D2, #FC58B8);
+}
+
+.container .item6 {
+    background-image: linear-gradient(to bottom right, #70F0E3, #36D9C8);
+}
+
+.container .item7 {
+    background-image: linear-gradient(to bottom right, #97A8FC, #5878FC);
+}
+
+.container .item8 {
+    background-image: linear-gradient(to bottom right, #FC9797, #FE6969);
+}
+
+.container .item9 {
+    background-image: linear-gradient(to bottom right, #97ECFC, #30DDFF);
+}
+
+.container .item10 {
+    background-image: linear-gradient(to bottom right, #96B7FA, #5580EB);
+}
