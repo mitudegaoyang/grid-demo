@@ -13,36 +13,42 @@
 
 .container2 {
     gap: 10px;
-    grid-auto-flow: column;
+    justify-content: start;
 }
 
 .container3 {
     gap: 10px;
-}
-
-.container3 .item1, .container3 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    justify-content: end;
 }
 
 .container4 {
     gap: 10px;
-    grid-auto-flow: row dense;
-}
-
-.container4 .item1, .container4 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    justify-content: center;
 }
 
 .container5 {
     gap: 10px;
-    grid-auto-flow: column dense;
+    justify-content: stretch;
 }
 
-.container5 .item1, .container5 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+.container6 {
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.container7 {
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.container8 {
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.container9 {
+    gap: 10px;
+    place-content: space-around space-evenly;
 }
 
 .container .item {

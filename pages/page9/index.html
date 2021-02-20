@@ -16,9 +16,9 @@
     <div><a href="../../index.html">返回列表</a></div>
     <div class="page-title">justify-content 属性，align-content 属性，place-content 属性</div>
     <pre class="code">
-        .container {
-            grid-auto-flow: row; // 默认值
-        }</pre>
+            .container {
+                grid: 10px;
+            }</pre>
     <div class="container container1">
         <div class="item item1">1</div>
         <div class="item item2">2</div>
@@ -32,7 +32,8 @@
     </div>
     <pre class="code">
         .container {
-            grid-auto-flow: column;
+            grid: 10px;
+            justify-content: start;
         }</pre>
     <div class="container container2">
         <div class="item item1">1</div>
@@ -48,10 +49,7 @@
     <pre class="code">
         .container {
             grid: 10px;
-        }
-        .item1, .item2 {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            justify-content: end;
         }</pre>
     <div class="container container3">
         <div class="item item1">1</div>
@@ -67,11 +65,7 @@
     <pre class="code">
         .container {
             grid: 10px;
-            grid-auto-flow: row dense;
-        }
-        .item1, .item2 {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            justify-content: center;
         }</pre>
     <div class="container container4">
         <div class="item item1">1</div>
@@ -87,13 +81,73 @@
     <pre class="code">
         .container {
             grid: 10px;
-            grid-auto-flow: column dense;
-        }
-        .item1, .item2 {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            justify-content: stretch;
         }</pre>
     <div class="container container5">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            grid: 10px;
+            justify-content: space-around;
+        }</pre>
+    <div class="container container6">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            grid: 10px;
+            justify-content: space-between;
+        }</pre>
+    <div class="container container7">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            grid: 10px;
+            justify-content: space-evenly;
+        }</pre>
+    <div class="container container8">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            grid: 10px;
+            place-content: space-around space-evenly;
+        }</pre>
+    <div class="container container9">
         <div class="item item1">1</div>
         <div class="item item2">2</div>
         <div class="item item3">3</div>
