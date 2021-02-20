@@ -14,3 +14,24 @@ body {
     justify-content: center;
     align-content: center;
 }
+
+.page-title {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.code {
+    padding: 20px;
+    background-color: #f5f2f0;
+    color: black;
+    text-shadow: 0 1px white;
+    font-family: monospace,Consolas,Monaco,"Andale Mono";
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    font-size: 1.2em;
+}
