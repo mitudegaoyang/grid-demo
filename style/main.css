@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+
 #root {
     width: 100%;
     height: 100%;
@@ -8,6 +9,7 @@ body {
     display: grid;
     grid-auto-rows: 100px; 
 }
+
 .container {
     display: grid;
     text-align: center;
@@ -34,4 +36,14 @@ body {
     white-space: pre;
     word-spacing: normal;
     font-size: 1.2em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s linear
+}
+
+a:hover {
+    color: #FFCE1C;
 }

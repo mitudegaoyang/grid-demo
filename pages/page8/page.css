@@ -1,0 +1,78 @@
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+}
+
+.container1 {
+    gap: 10px;
+    justify-items: start;
+    align-items: start;
+}
+
+.container2 {
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.container3 {
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.container4 {
+    gap: 10px;
+    place-items: start end; 
+}
+
+.container .item {
+    font-size: 3em;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .item1 {
+    background-image: linear-gradient(to bottom right, #FC97AF, #FC587F);
+}
+
+.container .item2 {
+    background-image: linear-gradient(to bottom right, #97CAFC, #58AAFC);
+}
+
+.container .item3 {
+    background-image: linear-gradient(to bottom right, #FCCA97, #FCA958);
+}
+
+.container .item4 {
+    background-image: linear-gradient(to bottom right, #B197FC, #8158FC);
+}
+
+.container .item5 {
+    background-image: linear-gradient(to bottom right, #FC97D2, #FC58B8);
+}
+
+.container .item6 {
+    background-image: linear-gradient(to bottom right, #70F0E3, #36D9C8);
+}
+
+.container .item7 {
+    background-image: linear-gradient(to bottom right, #97A8FC, #5878FC);
+}
+
+.container .item8 {
+    background-image: linear-gradient(to bottom right, #FC9797, #FE6969);
+}
+
+.container .item9 {
+    background-image: linear-gradient(to bottom right, #97ECFC, #30DDFF);
+}
+
+.container .item10 {
+    background-image: linear-gradient(to bottom right, #96B7FA, #5580EB);
+}
