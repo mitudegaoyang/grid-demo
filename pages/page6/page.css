@@ -8,69 +8,41 @@
 }
 
 .container1 {
-    grid-template-areas: "a b c" "d e f" "c d e"
+    gap: 10px;
 }
 
 .container2 {
-    grid-template-areas: 'a a a'
-                         'b b b'
-                         'c c c';
-}
-
-.container2 .item1{
-    grid-area: a;
-}
-.container2 .item2{
-    grid-area: b;
-}
-.container2 .item3{
-    grid-area: c;
+    gap: 10px;
+    grid-auto-flow: column;
 }
 
 .container3 {
-    grid-template-columns: repeat(3, 33.33%);
-    grid-template-rows: 100px minmax(100px, auto) 100px;
-    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+    gap: 10px;
 }
 
-.container3 .item1{
-    grid-area: header;
-}
-.container3 .item2{
-    grid-area: main;
-    height: 500px;
-    line-height: 500px;
-}
-.container3 .item3{
-    grid-area: sidebar;
-}
-.container3 .item4{
-    grid-area: footer;
+.container3 .item1, .container3 .item2{
+  grid-column-start: 1;
+  grid-column-end: 3;  
 }
 
 .container4 {
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(5, 100px);
-    grid-template-areas: ".  g  g  g  . " "o_ .  .  .  . " "o  .  e  e  . " "o  .  .  .  l " ".  g_ g_ g_ . "
+    gap: 10px;
+    grid-auto-flow: row dense;
 }
 
-.container4 .item1{
-    grid-area: g;
+.container4 .item1, .container4 .item2{
+  grid-column-start: 1;
+  grid-column-end: 3;  
 }
-.container4 .item2{
-    grid-area: o_;
+
+.container5 {
+    gap: 10px;
+    grid-auto-flow: column dense;
 }
-.container4 .item3{
-    grid-area: o;
-}
-.container4 .item4{
-    grid-area: g_;
-}
-.container4 .item5{
-    grid-area: l;
-}
-.container4 .item6{
-    grid-area: e;
+
+.container5 .item1, .container5 .item2{
+  grid-column-start: 1;
+  grid-column-end: 3;  
 }
 
 .container .item {

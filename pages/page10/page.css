@@ -5,8 +5,57 @@
     grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-content: center;
+}
+
+.container1 {
     gap: 10px;
-    grid-auto-rows: 75px; 
+    grid-template: ". g g g . " 100px
+                    "o_ . . . . " 100px
+                    "o . e e . " 100px 
+                    "o . . . l " 100px
+                    ". g_ g_ g_ ." 100px 
+                    / 100px 100px 100px 100px 100px;
+}
+
+.container1 .item1, .container2 .item1{
+    grid-area: g;
+}
+.container1 .item2,.container2 .item2{
+    grid-area: o_;
+}
+.container1 .item3,.container2 .item3{
+    grid-area: o;
+}
+.container1 .item4,.container2 .item4{
+    grid-area: g_;
+}
+.container1 .item5,.container2 .item5{
+    grid-area: l;
+}
+.container1 .item6,.container2 .item6{
+    grid-area: e;
+}
+.container2 .item7{
+  grid-column-start: 6;
+  grid-column-end: 7;  
+}
+.container2 .item8{
+  grid-column-start: 6;
+  grid-column-end: 7;  
+}
+.container2 .item9{
+  grid-row-start: 6;
+  grid-row-end: 7;  
+}
+
+.container2 {
+    gap: 10px;
+    grid: ". g g g . " 100px
+                    "o_ . . . . " 100px
+                    "o . e e . " 100px 
+                    "o . . . l " 100px
+                    ". g_ g_ g_ ." 100px 
+                    / repeat(5, 100px);
 }
 
 .container .item {
@@ -46,14 +95,10 @@
 
 .container .item8 {
     background-image: linear-gradient(to bottom right, #FC9797, #FE6969);
-    grid-row-start: 4;
-    grid-column-start: 2;
 }
 
 .container .item9 {
     background-image: linear-gradient(to bottom right, #97ECFC, #30DDFF);
-    grid-row-start: 5;
-    grid-column-start: 3;
 }
 
 .container .item10 {

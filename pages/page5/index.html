@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app" />
-    <title>Grid grid-row-gap属性 grid-column-gap属性 grid-gap属性</title>
+    <title>Grid grid-template-areas属性</title>
     <link rel="stylesheet" type="text/css" href="../../style/main.css">
     <link rel="stylesheet" type="text/css" href="./page.css">
 </head>
 
 <body>
     <div><a href="../../index.html">返回列表</a></div>
-    <div class="page-title">grid-row-gap 属性，grid-column-gap 属性，grid-gap 属性</div>
+    <div class="page-title">grid-template-areas 属性</div>
     <pre class="code">
         .container {
-            grid-row-gap: 10px;
-            grid-column-gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: "a b c"
+                                 "d e f" 
+                                 "c d e";
         }</pre>
     <div class="container container1">
         <div class="item item1">1</div>
@@ -33,7 +37,21 @@
     </div>
     <pre class="code">
         .container {
-            grid-gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 'a a a'
+                                 'b b b'
+                                 'c c c';
+        }
+        .item1 {
+            grid-area: a;
+        }
+        .item2 {
+            grid-area: b;
+        }
+        .item3 {
+            grid-area: c;
         }</pre>
     <div class="container container2">
         <div class="item item1">1</div>
@@ -48,18 +66,76 @@
     </div>
     <pre class="code">
         .container {
-            grid: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 33.33%);
+            grid-template-rows: 100px minmax(100px, auto) 100px;
+            grid-template-areas: "header header header"
+                                 "main main sidebar"
+                                 "footer footer footer";
+        }
+        .item1 {
+            grid-area: header;
+        }
+        .item2 {
+            grid-area: main;
+            height: 500px;
+            line-height: 500px;
+        }
+        .item3 {
+            grid-area: sidebar;
+        }
+        .item4 {
+            grid-area: footer;
         }</pre>
     <div class="container container3">
+        <div class="item item1">header</div>
+        <div class="item item2">main</div>
+        <div class="item item3">sidebar</div>
+        <div class="item item4">footer</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            grid-template-rows: repeat(12, 50px);
+            grid-template-areas: "g g g g g g g g g g "
+                                "g g g g g g g g g g "
+                                "o_ o_ . . . . . . . . "
+                                "o_ o_ . . e e e e e e "
+                                "o_ o_ . . e e e e e e "
+                                "o_ o_ . . . . . . . . "
+                                "o_ o_ . . l l l l l l "
+                                "o_ o_ . . l l l l l l "
+                                "o_ o_ . . . . . . g_ g_ "
+                                "o_ o_ . . . . . . g_ g_ "
+                                "o o o o o o o o o o"
+                                "o o o o o o o o o o"
+        }
+        .item1 {
+            grid-area: g;
+        }
+        .item2 {
+            grid-area: o_;
+        }
+        .item3 {
+            grid-area: o;
+        }
+        .item4 {
+            grid-area: g_;
+        }
+        .item5 {
+            grid-area: l;
+        }
+        .item6 {
+            grid-area: e;
+        }</pre>
+    <div class="container container4">
         <div class="item item1">1</div>
         <div class="item item2">2</div>
         <div class="item item3">3</div>
         <div class="item item4">4</div>
         <div class="item item5">5</div>
         <div class="item item6">6</div>
-        <div class="item item7">7</div>
-        <div class="item item8">8</div>
-        <div class="item item9">9</div>
     </div>
     <div><a href="../../index.html">返回列表</a></div>
 </body>

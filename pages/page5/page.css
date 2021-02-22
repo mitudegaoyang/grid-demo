@@ -8,16 +8,80 @@
 }
 
 .container1 {
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-template-areas: "a b c" "d e f" "c d e"
 }
 
 .container2 {
-    grid-gap: 20px;
+    grid-template-areas: 'a a a'
+                         'b b b'
+                         'c c c';
+}
+
+.container2 .item1{
+    grid-area: a;
+}
+.container2 .item2{
+    grid-area: b;
+}
+.container2 .item3{
+    grid-area: c;
 }
 
 .container3 {
-    gap: 30px;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 100px minmax(100px, auto) 100px;
+    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+}
+
+.container3 .item1{
+    grid-area: header;
+}
+.container3 .item2{
+    grid-area: main;
+    height: 500px;
+    line-height: 500px;
+}
+.container3 .item3{
+    grid-area: sidebar;
+}
+.container3 .item4{
+    grid-area: footer;
+}
+
+.container4 {
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(12, 50px);
+    grid-template-areas: "g g g g g g g g g g "
+                        "g g g g g g g g g g "
+                        "o_ o_ . . . . . . . . "
+                        "o_ o_ . . e e e e e e "
+                        "o_ o_ . . e e e e e e "
+                        "o_ o_ . . . . . . . . "
+                        "o_ o_ . . l l l l l l "
+                        "o_ o_ . . l l l l l l "
+                        "o_ o_ . . . . . . g_ g_ "
+                        "o_ o_ . . . . . . g_ g_ "
+                        "o o o o o o o o o o"
+                        "o o o o o o o o o o"
+}
+
+.container4 .item1{
+    grid-area: g;
+}
+.container4 .item2{
+    grid-area: o_;
+}
+.container4 .item3{
+    grid-area: o;
+}
+.container4 .item4{
+    grid-area: g_;
+}
+.container4 .item5{
+    grid-area: l;
+}
+.container4 .item6{
+    grid-area: e;
 }
 
 .container .item {

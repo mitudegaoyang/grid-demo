@@ -9,40 +9,25 @@
 
 .container1 {
     gap: 10px;
+    justify-items: start;
+    align-items: start;
 }
 
 .container2 {
     gap: 10px;
-    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .container3 {
     gap: 10px;
-}
-
-.container3 .item1, .container3 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .container4 {
     gap: 10px;
-    grid-auto-flow: row dense;
-}
-
-.container4 .item1, .container4 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
-}
-
-.container5 {
-    gap: 10px;
-    grid-auto-flow: column dense;
-}
-
-.container5 .item1, .container5 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    place-items: start end; 
 }
 
 .container .item {

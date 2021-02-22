@@ -1,12 +1,58 @@
 .container {
-    display: inline-grid;
+    display: grid;
     text-align: center;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-content: center;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.container1 {
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.container2 {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.container3 {
+    grid-template-columns: repeat(2, 100px 20px 80px);
+}
+
+.container4 {
+  grid-template-columns: repeat(auto-fill, 15%);
+}
+
+.container5 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.container6 {
+  grid-template-columns: 150px 1fr 2fr;
+}
+
+.container7 {
+  grid-template-columns: 1fr 1fr minmax(300px, 1fr);
+}
+
+.container8 {
+  grid-template-columns: 200px minmax(100px, auto) 200px;
+}
+
+.container9 {
+  grid-template-columns: [c1] 100px [c2] 100px [c3] auto [c4];
+  grid-template-rows: [r1] 100px [r2] 100px [r3] auto [r4];
+}
+
+.container10 {
+  grid-template-columns: 70% 30%;
+}
+
+.container11 {
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .container .item {
@@ -54,4 +100,12 @@
 
 .container .item10 {
     background-image: linear-gradient(to bottom right, #96B7FA, #5580EB);
+}
+
+.container .item11 {
+    background-image: linear-gradient(to bottom right, #FF9DB8, #FF6DB8);
+}
+
+.container .item12 {
+    background-image: linear-gradient(to bottom right, #61F2EB, #61D2EB);
 }

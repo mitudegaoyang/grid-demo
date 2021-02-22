@@ -7,16 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app" />
-    <title>Grid display:inline-grid</title>
+    <title>Grid grid-template-columns属性 grid-template-rows属性</title>
     <link rel="stylesheet" type="text/css" href="../../style/main.css">
     <link rel="stylesheet" type="text/css" href="./page.css">
 </head>
 
 <body>
     <div><a href="../../index.html">返回列表</a></div>
-    <div class="page-title">display:inline-grid</div>
-    <span>foo</span>
-    <div class="container">
+    <div class="page-title">grid-template-columns属性，grid-template-rows属性</div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+        }</pre>
+    <div class="container container1">
         <div class="item item1">1</div>
         <div class="item item2">2</div>
         <div class="item item3">3</div>
@@ -27,7 +32,172 @@
         <div class="item item8">8</div>
         <div class="item item9">9</div>
     </div>
-    <span>bar</span>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows: 33.33% 33.33% 33.33%;
+        }</pre>
+    <div class="container container2">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 100px 20px 80px);
+        }</pre>
+    <div class="container container3">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 15%);
+        }</pre>
+    <div class="container container4">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }</pre>
+    <div class="container container5">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 150px 1fr 2fr;
+        }</pre>
+    <div class="container container6">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr minmax(300px, 1fr);
+        }</pre>
+    <div class="container container7">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+        }</pre>
+    <div class="container container8">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: [c1] 100px [c2] 100px [c3] auto [c4];
+            grid-template-rows: [r1] 100px [r2] 100px [r3] auto [r4];
+        }</pre>
+    <div class="container container9">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }</pre>
+    <div class="container container10">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    <pre class="code">
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }</pre>
+    <div class="container container11">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+        <div class="item item11">11</div>
+        <div class="item item12">12</div>
+    </div>
+    <div><a href="../../index.html">返回列表</a></div>
 </body>
 
 </html>
