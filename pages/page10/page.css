@@ -51,11 +51,11 @@
 .container2 {
     gap: 10px;
     grid: ". g g g . " 100px
-                    "o_ . . . . " 100px
-                    "o . e e . " 100px 
-                    "o . . . l " 100px
-                    ". g_ g_ g_ ." 100px 
-                    / repeat(5, 100px);
+        "o_ . . . . " 100px
+        "o . e e . " 100px 
+        "o . . . l " 100px
+        ". g_ g_ g_ ." 100px 
+        / 100px 100px 100px 100px 100px;
 }
 
 .container .item {

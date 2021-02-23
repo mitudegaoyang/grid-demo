@@ -5,50 +5,36 @@
     grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-content: center;
-}
-
-.container1 {
     gap: 10px;
 }
 
-.container2 {
-    gap: 10px;
-    justify-content: start;
+.container1 .item1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.container2 .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .container3 {
-    gap: 10px;
-    justify-content: end;
+    grid-template-areas: 'header header header' 'main main sidebar' 'footer footer footer';
 }
 
-.container4 {
-    gap: 10px;
-    justify-content: center;
+.container3 .item1{
+  grid-column-start: header-start;
+  grid-column-end: header-end;
 }
 
-.container5 {
-    gap: 10px;
-    justify-content: stretch;
+.container4 .item1{
+    grid-column-start: span 2;
 }
 
-.container6 {
-    gap: 10px;
-    justify-content: space-around;
-}
-
-.container7 {
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.container8 {
-    gap: 10px;
-    justify-content: space-evenly;
-}
-
-.container9 {
-    gap: 10px;
-    place-content: space-around space-evenly;
+.container5 .item1{
+    grid-column-end: span 2;
 }
 
 .container .item {
