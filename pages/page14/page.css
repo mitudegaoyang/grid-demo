@@ -5,50 +5,15 @@
     grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-content: center;
-}
-
-.container1 {
     gap: 10px;
 }
 
-.container2 {
-    gap: 10px;
-    justify-content: start;
+.container1 .item {
+    justify-self: start;
 }
 
-.container3 {
-    gap: 10px;
-    justify-content: end;
-}
-
-.container4 {
-    gap: 10px;
-    justify-content: center;
-}
-
-.container5 {
-    gap: 10px;
-    justify-content: stretch;
-}
-
-.container6 {
-    gap: 10px;
-    justify-content: space-around;
-}
-
-.container7 {
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.container8 {
-    gap: 10px;
-    justify-content: space-evenly;
-}
-
-.container9 {
-    gap: 10px;
-    place-content: space-around space-evenly;
+.container2 .item {
+    place-self: center stretch;
 }
 
 .container .item {
