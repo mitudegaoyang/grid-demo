@@ -5,44 +5,34 @@
     grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-content: center;
-}
-
-.container1 {
     gap: 10px;
 }
 
 .container2 {
-    gap: 10px;
     grid-auto-flow: column;
 }
 
-.container3 {
-    gap: 10px;
-}
-
 .container3 .item1, .container3 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    grid-column-start: 1;
+    grid-column-end: 3;  
 }
 
 .container4 {
-    gap: 10px;
     grid-auto-flow: row dense;
 }
 
 .container4 .item1, .container4 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    grid-column-start: 1;
+    grid-column-end: 3;  
 }
 
 .container5 {
-    gap: 10px;
     grid-auto-flow: column dense;
 }
 
 .container5 .item1, .container5 .item2{
-  grid-column-start: 1;
-  grid-column-end: 3;  
+    grid-column-start: 1;
+    grid-column-end: 3;  
 }
 
 .container .item {

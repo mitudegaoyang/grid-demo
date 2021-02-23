@@ -7,6 +7,53 @@
     align-content: center;
 }
 
+.container .item {
+    font-size: 3em;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .item1 {
+    background-image: linear-gradient(to bottom right, #FC97AF, #FC587F);
+}
+
+.container .item2 {
+    background-image: linear-gradient(to bottom right, #97CAFC, #58AAFC);
+}
+
+.container .item3 {
+    background-image: linear-gradient(to bottom right, #FCCA97, #FCA958);
+}
+
+.container .item4 {
+    background-image: linear-gradient(to bottom right, #B197FC, #8158FC);
+}
+
+.container .item5 {
+    background-image: linear-gradient(to bottom right, #FC97D2, #FC58B8);
+}
+
+.container .item6 {
+    background-image: linear-gradient(to bottom right, #70F0E3, #36D9C8);
+}
+
+.container .item7 {
+    background-image: linear-gradient(to bottom right, #97A8FC, #5878FC);
+}
+
+.container .item8 {
+    background-image: linear-gradient(to bottom right, #FC9797, #FE6969);
+}
+
+.container .item9 {
+    background-image: linear-gradient(to bottom right, #97ECFC, #30DDFF);
+}
+
+.container .item10 {
+    background-image: linear-gradient(to bottom right, #96B7FA, #5580EB);
+}
+
 .container1 {
     grid-template-areas: "a b c" "d e f" "c d e"
 }
@@ -67,66 +114,25 @@
 
 .container4 .item1{
     grid-area: g;
+    background-image: linear-gradient(to bottom right, #555, #111);
 }
 .container4 .item2{
     grid-area: o_;
+    background-image: linear-gradient(to bottom right, #555, #111);
 }
 .container4 .item3{
     grid-area: o;
+    background-image: linear-gradient(to bottom right, #555, #111);
 }
 .container4 .item4{
     grid-area: g_;
+    background-image: linear-gradient(to bottom right, #555, #111);
 }
 .container4 .item5{
     grid-area: l;
+    background-image: linear-gradient(to bottom right, #555, #111);
 }
 .container4 .item6{
     grid-area: e;
-}
-
-.container .item {
-    font-size: 3em;
-    color: #eee;
-    padding: 10px;
-    text-align: center;
-}
-
-.container .item1 {
-    background-image: linear-gradient(to bottom right, #FC97AF, #FC587F);
-}
-
-.container .item2 {
-    background-image: linear-gradient(to bottom right, #97CAFC, #58AAFC);
-}
-
-.container .item3 {
-    background-image: linear-gradient(to bottom right, #FCCA97, #FCA958);
-}
-
-.container .item4 {
-    background-image: linear-gradient(to bottom right, #B197FC, #8158FC);
-}
-
-.container .item5 {
-    background-image: linear-gradient(to bottom right, #FC97D2, #FC58B8);
-}
-
-.container .item6 {
-    background-image: linear-gradient(to bottom right, #70F0E3, #36D9C8);
-}
-
-.container .item7 {
-    background-image: linear-gradient(to bottom right, #97A8FC, #5878FC);
-}
-
-.container .item8 {
-    background-image: linear-gradient(to bottom right, #FC9797, #FE6969);
-}
-
-.container .item9 {
-    background-image: linear-gradient(to bottom right, #97ECFC, #30DDFF);
-}
-
-.container .item10 {
-    background-image: linear-gradient(to bottom right, #96B7FA, #5580EB);
+    background-image: linear-gradient(to bottom right, #f58d6d, #d1552f);
 }
