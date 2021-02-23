@@ -47,3 +47,20 @@ a {
 a:hover {
     color: #FFCE1C;
 }
+
+.top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.top::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: translate(10px, -10px);
+    border: 20px solid transparent;
+    border-bottom: 20px solid #FFCE1C;
+}
